@@ -4,6 +4,7 @@ This app provide a login page. It is done with:
 
   - Next.js
   - NextAuth
+  - MongoDB
   - DataTable Prime
   - Typescript
   - Tailwind 
