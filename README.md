@@ -29,7 +29,7 @@ SSH URLs provide access to a Git repository via SSH, a secure protocol. If you h
 
 ```git clone git@github.com:JoseHermosillo/Next-NextAuth-DatatablePrime-DataTableCustomer.git```
 
-### Instal dependencies
+### Install dependencies
 
 After clone, install the dependencies and devDependencies.
 
