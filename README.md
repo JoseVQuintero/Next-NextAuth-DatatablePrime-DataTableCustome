@@ -1,26 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS Login Page And DataTable
 
-## Getting Started
+This app provide a login page. It is done with:
 
-First, run the development server:
+  - Next.js
+  - NextAuth
+  - DataTable Prime
+  - Typescript
+  - Tailwind 
+  - Hooks
+  - React
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The final version can be found here: https://next-next-auth-datatable-prime-data-table-customer.vercel.app
+
+<p align="center">
+    <a target="_blank" href="https://next-next-auth-datatable-prime-data-table-customer.vercel.app">
+      <img src="./public/images/app-login.PNG" width="70%"/>
+    </a>
+</p>
+
+## Instalation
+
+**You need to install [Node.js](https://nodejs.org/en/download/)**
+
+```git clone https://github.com/JoseHermosillo/Next-NextAuth-DatatablePrime-DataTableCustomer.git```
+
+SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
+
+```git clone git@github.com:JoseHermosillo/Next-NextAuth-DatatablePrime-DataTableCustomer.git```
+
+### Instal dependencies
+
+After clone, install the dependencies and devDependencies.
+
+```sh
+$ cd Next-NextAuth-DatatablePrime-DataTableCustomer
+$ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run the following command in order to start the application in a development environment:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```npm run dev```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Now you can access http://localhost:3000/ to see the login page.
 
-## Learn More
+## Usage
 
-# Next-NextAuth-DatatablePrime-DataTableCustomer
-Next-NextAuth-DatatablePrime-DataTableCustomer
+You can use the following user to make login at the app:
+
+```
+signUp
+```
