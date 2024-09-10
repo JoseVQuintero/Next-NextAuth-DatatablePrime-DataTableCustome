@@ -90,7 +90,7 @@ const Products = () => {
             </thead>
             <tbody>
               {records.map((row,i) => {
-                return <tr>{headersData.map((k: any) => <td key={`${k.id}${i}`} className={k.class}>{eval(k.field)}</td>)}</tr>
+                return <tr>{headersData.map((k: any) => <td key={`${i+1}records`} className={k.class}>{eval(k.field)}</td>)}</tr>
                 }
               )}
             </tbody>
