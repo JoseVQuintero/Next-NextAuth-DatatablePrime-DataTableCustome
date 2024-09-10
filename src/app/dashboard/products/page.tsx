@@ -81,16 +81,16 @@ const Products = () => {
           <table className="w-full text-xs overflow-x-auto">
             <thead>
               <tr className="bg-gray-2 text-left dark:bg-meta-4">
-                {headersData.map((v: any) =>
-                  <th className={v.class}>{v.title}<input type="text" placeholder="Search" onChange={(e) => setSearch({ type: `${v.id}`, value: e.target.value })}
+                {headersData.map((v: any,i:any) =>
+                  <th key={`${i+1}header`} className={v.class}>{v.title}<input type="text" placeholder="Search" onChange={(e) => setSearch({ type: `${v.id}`, value: e.target.value })}
                   className="w-full rounded-lg border border-stroke bg-transparent py-2 pl-4 pr-10 text-black focus:border-primary focus-visible:shadow-none" />
                   </th>
                 )}
               </tr>
             </thead>
             <tbody>
-              {records.map((row,index) => {
-                return <tr>{headersData.map((k: any) => <td key={k.id} className={k.class}>{eval(k.field)}</td>)}</tr>
+              {records.map((row,i) => {
+                return <tr>{headersData.map((k: any) => <td key={`${k.id}${i}`} className={k.class}>{eval(k.field)}</td>)}</tr>
                 }
               )}
             </tbody>
@@ -107,8 +107,8 @@ const Products = () => {
                           <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" onClick={() => prevPage()}>Prev</a>
                   }
                   </li>
-                  {[1,2,3,4,5].map((n)=>
-                    <li>
+                  {[1,2,3,4,5].map((n,i)=>
+                    <li key={`${i+1}paginator`}>
                       {
                         currentPage === n ?
                           <a href="#" aria-current="page" className="flex items-center justify-center px-3 h-8 text-blue-600 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 border border-gray-300  dark:border-gray-700 dark:bg-gray-700 dark:text-white" onClick={() => numberPage(n)}>{ n }</a>
