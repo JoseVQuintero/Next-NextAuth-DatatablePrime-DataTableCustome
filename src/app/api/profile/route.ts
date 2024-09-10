@@ -9,7 +9,7 @@ export const GET = async (request: any) => {
   await connect();
 
   const profiles = await Profiles.find();
-
+  //console.log(profiles)
   /* 
   if (existingUser) {
     return new NextResponse("Email is already in use", { status: 400 });

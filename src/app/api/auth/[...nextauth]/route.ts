@@ -45,6 +45,7 @@ const authOptions: any = {
     }),
     // ...add more providers here
   ],
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async signIn({ user, account }: { user: AuthUser; account: Account }) {
       if (account?.provider == "credentials") {
@@ -69,7 +70,7 @@ const authOptions: any = {
         }
       }
 
-      if(account?.provider == "google"){
+      if (account?.provider == "google") {
         await connect();
         try {
           const existingUser = await Users.findOne({ email: user.email });
@@ -87,7 +88,6 @@ const authOptions: any = {
           return false;
         }
       }
-
     },
   },
 };
