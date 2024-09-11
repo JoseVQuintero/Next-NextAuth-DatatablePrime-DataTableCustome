@@ -23,18 +23,18 @@ The final version can be found here: https://next-next-auth-datatable-prime-data
 
 **You need to install [Node.js](https://nodejs.org/en/download/)**
 
-```git clone https://github.com/JoseHermosillo/Next-NextAuth-DatatablePrime-DataTableCustomer.git```
+```git clone https://github.com/JoseHermosillo/Next-NextAuth-DatatablePrime-DataTableCustome.git```
 
 SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
-```git clone git@github.com:JoseHermosillo/Next-NextAuth-DatatablePrime-DataTableCustomer.git```
+```git clone git@github.com:JoseHermosillo/Next-NextAuth-DatatablePrime-DataTableCustome.git```
 
 ### Install dependencies
 
 After clone, install the dependencies and devDependencies.
 
 ```sh
-$ cd Next-NextAuth-DatatablePrime-DataTableCustomer
+$ cd Next-NextAuth-DatatablePrime-DataTableCustome
 $ npm install
 ```
 
